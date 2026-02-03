@@ -414,7 +414,7 @@ export const runConsistencyCheck = async (history: AnalysisResult[]): Promise<Co
   const prompt = `Review history for ${sorted[0].ticker}: ${JSON.stringify(sorted)}`;
   
   const response = await ai.models.generateContent({
-    model: 'gemini-3-flash-preview',
+    model: 'gemini-2.0-flash',
     contents: prompt,
     config: { 
         responseMimeType: "application/json", 
