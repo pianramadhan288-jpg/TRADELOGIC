@@ -381,7 +381,7 @@ export const analyzeStock = async (input: StockAnalysisInput): Promise<AnalysisR
 
   try {
     const response = await ai.models.generateContent({
-      model: 'gemini-3-pro-preview',
+      model: 'gemini-2.0-flash',
       contents: { parts: promptParts },
       config: {
         systemInstruction: dynamicInstruction,
